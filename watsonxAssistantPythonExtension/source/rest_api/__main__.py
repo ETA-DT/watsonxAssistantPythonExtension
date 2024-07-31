@@ -20,7 +20,7 @@
 ##
  # import the referenced "lorem" module 
 from lorem_text import lorem
-import TM1py
+# import TM1py
 
 ##
  # The `main` function is the entry-point into the function.
@@ -40,20 +40,20 @@ import TM1py
  #  
 def main(params):
     words = 10
-    tm1_credentials = {
-        "auth_type":"""basic""",
-        "password" : "erwan.tang",
-        "service_root": "91.236.254.119",
-        "username" : "",
-        "port" : 5029,
-        "view_name" : "TM1View"    
-    } 
-    with TM1Service(address=tm1_credentials["service_root"],
-                port=tm1_credentials["port"],
-                user=tm1_credentials["username"],
-                password=tm1_credentials["password"],
-                ssl=False) as tm1:
-        first_cube_name = tm1.cubes.get_all_names()[0]
+    # tm1_credentials = {
+    #     "auth_type":"""basic""",
+    #     "password" : "erwan.tang",
+    #     "service_root": "91.236.254.119",
+    #     "username" : "",
+    #     "port" : 5029,
+    #     "view_name" : "TM1View"    
+    # } 
+    # with TM1Service(address=tm1_credentials["service_root"],
+    #             port=tm1_credentials["port"],
+    #             user=tm1_credentials["username"],
+    #             password=tm1_credentials["password"],
+    #             ssl=False) as tm1:
+    #     first_cube_name = tm1.cubes.get_all_names()[0]
     return {
         # specify headers for the HTTP response
         # we only set the Content-Type in this case, to 
@@ -64,7 +64,7 @@ def main(params):
         
         ## use the text generator to create a response sentence
         #  with 10 words
-        "body": first_cube_name,
+        "body": 'AAAAAAAAAAAAAA',
     }
 # Optional:
 #   If you used a function name different from 'main', make
