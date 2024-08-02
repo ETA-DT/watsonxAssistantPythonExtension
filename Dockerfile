@@ -1,5 +1,5 @@
 FROM icr.io/codeengine/golang:alpine
-COPY ./helloworld /helloworld
+COPY ./helloworld /helloworl
 COPY codeengine.go /
 RUN go build -o /codeengine /codeengine.go
 
